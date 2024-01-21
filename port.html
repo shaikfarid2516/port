@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat&family=Chivo+Mono:wght@500&family=Courier+Prime:wght@700&family=Dancing+Script&family=Fraunces:opsz,wght@9..144,700&family=IBM+Plex+Serif:wght@300&family=Inter:wght@600&family=Kenia&family=Libre+Baskerville&family=Montserrat:wght@100&family=Noto+Sans:ital,wght@0,400;1,300&family=Outfit:wght@100;400;800&family=Pacifico&family=Roboto:ital,wght@0,100;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            background-image: url('/Users/shaikfarid/Desktop/portfoilio/hero.png');
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            gap: 60px;
+        }
+
+        .title {
+            width: 80%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .dom {
+            color: rgb(155, 12, 12);
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            font-size: 70px;
+            margin: 0;
+        }
+
+        .cloud {
+            color: black;
+            font-size: 80px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .fon {
+            font-family: 'fnordtwenty-three';
+            font-size: clamp(20px,5vw,80px)
+        }
+
+        .na {
+            color: black);
+            font-size: 60px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        img {
+            max-width: 70%;
+            border-radius: 10px;
+            height: auto;
+            box-shadow: 3px 3px 6px  rgba(0, 0, 0, 0.5);
+        }
+        .nd{
+            
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .h{
+            position: relative;
+            top: 10px;
+            font-size: 40px;
+        }
+        .contact{
+            width: 120px;
+            height: 50px;
+            padding: 5px;
+            color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: black;
+            cursor: pointer;
+            transition: background-color 0.9s;
+            border: none;
+            font-family: 'Lato', sans-serif;
+            box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+
+
+            
+        }
+        .contact:hover{
+            background-color: grey;
+        }
+        .Hire{
+            width: 120px;
+            height: 50px;
+            padding: 5px;
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 15px;
+            background-color: rgb(194, 15, 15);
+            transition: background-color 0.9s;
+            border: none;
+            outline: none;
+            font-family: 'Lato', sans-serif;
+            box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+        }
+        .Hire:hover{
+            background-color: rgb(238, 236, 236);
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+        }
+        a{
+            text-decoration: none;
+            color:aliceblue;
+        }
+        .about{
+            width: 60%;
+            height: 70%;
+            background-color: white;
+            position: relative;
+            left: 220px;
+            bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 9px 9px 3px rgba(0, 0, 0, 0.5);
+        }
+        .head{
+            font-family: 'Rock Salt';
+            margin: 0px;
+        }
+        .mine{
+            margin: 0px;
+            color: #333;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .res{
+            width: 100px;
+            height: 40px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s;
+            top: 10px;
+        }
+        .res:hover{
+            background-color: #333;
+        }
+        .grid{
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            position: relative;
+            left: 300px;
+            border-radius: 10px;
+            width: 60%;
+
+            margin-bottom: 20px;
+        }
+        .grid > div{
+            width: 60%;
+            height: 60%;
+        }
+        .aws{
+            width: 60%;
+            height: 60%;
+        }
+        .Pro{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            width: 60%;
+            height: auto;
+            border-radius: 10px;
+            position: relative;
+            left: 300px;
+        }
+        
+        .bd{
+            text-align: center;
+            font-size: 40px;
+            position: relative;
+            left: 20px;
+            
+            margin: 0px;
+            margin-top: 20px;
+        }
+        .info{
+            text-align: center;
+            position: relative;
+            left: 250px;
+            width: 70%;
+            height: auto;
+        }
+        .achieve{
+            font-family: 'permanent marker';
+        }
+        .prof{
+            text-decoration: none;
+            color:black;
+            position: relative;
+            font-size: 15px;
+            
+        }
+        .pt{
+            padding: 5px;
+            border-radius: 5px;
+            width: 100%;
+            height: 40px;
+            border: none;
+            background-color: white;
+            color: black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            right: 20px;
+        }
+        .pt:hover{
+            background-color: black;
+            color: white;
+        }
+        .c{
+            margin: 0px;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        /* Media query for small screens */
+        @media (max-width: 600px) {
+            .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+            .dom {
+                font-size: 50px;
+            }
+
+            .cloud {
+                font-size: 60px;
+            }
+
+            .na {
+                font-size: 50px;
+            }
+            img{
+                max-width: 50%;
+            }
+            .about{
+                width: 70%;
+                margin-top: 200px;
+                position: relative;
+                left: 70px;
+            }
+            .grid{
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                left: 180px;
+                width: 70%;
+                height: 100%;
+                background-color: transparent;
+                box-shadow: none;
+                gap: 10px;
+            }
+            .grid > div{
+                width: 100%;
+                height: 100%;
+            }
+            .info{
+                margin-left:20px; 
+                width: 60%;
+                position: relative;
+                left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="title">
+                <h1 class="na fon">I'm SHAIK FARID</h1>
+                <h1 class="dom fon">A Full Stack Developer </h1>
+                <h1 class="cloud fon">& AWS Cloud Engineer </h1>
+                <div class="button">
+                    <button class="Hire me"><a href="https://www.linkedin.com/in/shaik-farid-049833233/"><strong>Hire Me</strong></a></button>
+                    <button class="contact"><strong>Contact Me</strong></button>
+                </div>
+            </div>
+            <div class="image"> <img src="/Users/shaikfarid/Desktop/portfoilio/WhatsApp Image 2024-01-06 at 12.37.33.jpeg" alt="imag"> </div>
+        </div>
+        <div class="about">
+            <h2 class="head">About Me</h2>
+            <p class="mine">Greetings! I am Shaik Farid, an enthusiastic Information Technology student at Aditya Engineering College. Driven by a deep passion for programming, I adeptly navigate languages such as Python, C, C++, and Java to craft efficient and innovative solutions.<br>In parallel, I am sharpening my Fullstack development skills, aspiring to create seamless and user-friendly applications and also Aws cloud valuable skills in cloud architecture, deployment, and management.</p>
+            <button class="res"><a href="https://drive.google.com/file/d/1JltlOPICVzkQ-y3TVbnuXaGcABb0eNLa/view?usp=drivesdk" target="_blank"><strong>Resume</strong></a></button>
+        </div>
+        <h2 class="bd">Achievements</h2>
+        <div class="flex">
+            <hr>
+            <div class="info"><p class="achieve">As a technology enthusiast, I have successfully achieved certifications in various cutting-edge technologies and programming languages. These certifications demonstrate my commitment to staying at the forefront of the ever-evolving tech landscape. From recognized institutions and platforms, I've earned badges in [<u>AWS Academy Cloud Fundation,Introduction to Cyber Security,Microsoft Azure Administrator,Python IT Specialist, Redhat Linux Enterprises</u>] showcasing my proficiency and dedication to mastering diverse aspects of IT. These certifications validate my expertise and contribute to my continuous pursuit of excellence in the world of technology.</p></div>
+            <div class="grid">
+                <div class="aws"> <img src="/Users/shaikfarid/Desktop/portfoilio/aws-academy-graduate-aws-academy-cloud-foundations.png" alt="aws-cloud">  </div>
+                <div class="cyber"> <img src="/Users/shaikfarid/Desktop/portfoilio/introduction-to-cybersecurity.png" alt="Cyber">  </div>
+                <div class="micro"> <img src="/Users/shaikfarid/Desktop/portfoilio/microsoft-certified-azure-administrator-associate.2.png" alt="micro">  </div>
+                <div class="python"> <img src="/Users/shaikfarid/Desktop/portfoilio/it-specialist-python.png" alt="Python">  </div>
+                <div class="redhat"> <img src="/Users/shaikfarid/Desktop/portfoilio/red-hat-certified-system-administrator-rhcsa.png" alt="redhat">  </div>
+            </div>
+            <hr>
+        </div>
+        <h2 class="c">Competetive Coding Profiles</h2>
+        <div class="Pro">
+            <div>
+                <img src="/Users/shaikfarid/Desktop/portfoilio/icons8-codechef-50.png" alt="codechef" style="width: 60%; height: 60%; margin-top: 35px;">
+                <button class="pt" style="margin-top: 50px; color: white;"> <a class="prof"href="https://www.codechef.com/users/shaikfarid2516"> <strong>Codechef</strong> </a></button></p>
+            </div>
+            <div class="hack">
+                <img src="/Users/shaikfarid/Desktop/portfoilio/icons8-hackerrank-is-a-technology-company-that-focuses-on-competitive-programming-24.png" alt="hackerrank" style="width: 70%; height: 70%; margin-bottom: 10px;">
+                <button class="pt" style="margin-top: 40px;> <a class="prof" href="https://www.hackerrank.com/profile/21a91a1229"><strong>Hacker Rank</strong></a> </button>
+            </div>
+            <div>
+                <img src="/Users/shaikfarid/Desktop/portfoilio/icons8-geeksforgeeks-48.png" alt="gfg" style="width: 50%; height: 50%; margin-bottom: 10px;">
+                <button class="pt" style="margin-top: 30px;> <a class="prof" href="https://auth.geeksforgeeks.org/user/farid7786"> <strong>GeeksForGeeks</strong> </a></button>
+            </div>
+            <div>
+                <img src="/Users/shaikfarid/Desktop/portfoilio/leetcode.png" alt="leet" style="width: 70%; height: 70%;margin-bottom:10px;">
+                <button class="pt" style="margin-top: 40px;> <a class="prof" href="https://leetcode.com/ShaikFarid/"> <strong>LeetCode</strong> </a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
